@@ -100,7 +100,9 @@ class MainActivity : AppCompatActivity() {
 
     fun clear(view: View) {
         val txtInput = findViewById<TextView>(R.id.txtInput)
+        val txtSign = findViewById<TextView>(R.id.txtSign)
         txtInput.setText("0")
+        txtSign.setText("")
         num1 = 0.00
         num2 = 0.00
         operacion = NINGUNA
