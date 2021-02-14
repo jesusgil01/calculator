@@ -50,7 +50,8 @@
             android:text="log"
             android:textAllCaps="false"
             android:textSize="24sp"
-            android:textColor="@color/colorTextonSecondary"/>
+            android:textColor="@color/colorTextonSecondary"
+            android:onClick="operacionPresionada"/>
 
         <Button
             android:id="@+id/btnLn"
@@ -61,18 +62,20 @@
             android:text="ln"
             android:textAllCaps="false"
             android:textSize="24sp"
-            android:textColor="@color/colorTextonSecondary"/>
+            android:textColor="@color/colorTextonSecondary"
+            android:onClick="operacionPresionada"/>
 
-        <ImageButton
+        <Button
             android:id="@+id/btnPow"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:src="@drawable/ic_baseline_pow_24"
+           android:text="^"
             android:textAllCaps="false"
             android:textSize="24sp"
-            android:textColor="@color/colorTextonSecondary"/>
+            android:textColor="@color/colorTextonSecondary"
+            android:onClick="operacionPresionada"/>
 
         <Button
             android:id="@+id/btnSqrt"
@@ -83,7 +86,8 @@
             android:text="√"
             android:textAllCaps="false"
             android:textSize="24sp"
-            android:textColor="@color/colorTextonSecondary"/>
+            android:textColor="@color/colorTextonSecondary"
+            android:onClick="operacionPresionada"/>
 
         <Button
             android:id="@+id/btnFactorial"
@@ -94,7 +98,8 @@
             android:text="!"
             android:textAllCaps="false"
             android:textSize="24sp"
-            android:textColor="@color/colorTextonSecondary"/>
+            android:textColor="@color/colorTextonSecondary"
+            android:onClick="operacionPresionada"/>
 
 
     </LinearLayout>
@@ -117,7 +122,8 @@
             android:text="sin"
             android:textAllCaps="false"
             android:textSize="24sp"
-            android:textColor="@color/colorTextonSecondary"/>
+            android:textColor="@color/colorTextonSecondary"
+            android:onClick="operacionPresionada"/>
 
         <Button
             android:id="@+id/btnCos"
@@ -128,7 +134,8 @@
             android:text="cos"
             android:textAllCaps="false"
             android:textSize="24sp"
-            android:textColor="@color/colorTextonSecondary"/>
+            android:textColor="@color/colorTextonSecondary"
+            android:onClick="operacionPresionada"/>
 
         <Button
             android:id="@+id/btnTan"
@@ -139,7 +146,8 @@
             android:text="tan"
             android:textAllCaps="false"
             android:textSize="24sp"
-            android:textColor="@color/colorTextonSecondary"/>
+            android:textColor="@color/colorTextonSecondary"
+            android:onClick="operacionPresionada"/>
 
         <Button
             android:id="@+id/btnLeftParenthesis"
@@ -150,7 +158,8 @@
             android:text="("
             android:textAllCaps="false"
             android:textSize="24sp"
-            android:textColor="@color/colorTextonSecondary"/>
+            android:textColor="@color/colorTextonSecondary"
+            android:onClick="operacionPresionada"/>
 
         <Button
             android:id="@+id/btnRightParenthesis"
@@ -161,7 +170,8 @@
             android:text=")"
             android:textAllCaps="false"
             android:textSize="24sp"
-            android:textColor="@color/colorTextonSecondary"/>
+            android:textColor="@color/colorTextonSecondary"
+            android:onClick="operacionPresionada"/>
     </LinearLayout>
 
     <LinearLayout
@@ -213,7 +223,8 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:text="/"
             android:textColor="@color/colorTextonPrimary"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:onClick="operacionPresionada"/>
 
         <ImageButton
             android:id="@+id/btnBackspace"
@@ -267,15 +278,16 @@
             android:textSize="30sp"
             android:onClick="numeroPresionado"/>
 
-        <ImageButton
+        <Button
             android:id="@+id/btnMult"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:src="@drawable/ic_baseline_mult_24"
+            android:text="x"
             android:textColor="@color/colorTextonPrimary"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:onClick="operacionPresionada"/>
     </LinearLayout>
 
     <LinearLayout
@@ -319,15 +331,16 @@
             android:textSize="30sp"
             android:onClick="numeroPresionado"/>
 
-        <ImageButton
+        <Button
             android:id="@+id/btnMinus"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:src="@drawable/ic_baseline_minus_24"
+            android:text="-"
             android:textColor="@color/colorTextonPrimary"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:onClick="operacionPresionada"/>
     </LinearLayout>
 
     <LinearLayout
@@ -370,15 +383,16 @@
             android:textSize="30sp"
             android:enabled="false"/>
 
-        <ImageButton
+        <Button
             android:id="@+id/btnPlus"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:src="@drawable/ic_baseline_plus_24"
+            android:text="+"
             android:textColor="@color/colorTextonPrimary"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:onClick="operacionPresionada"/>
 
         <ImageButton
             android:id="@+id/btnEquals"
@@ -388,7 +402,8 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:src="@drawable/ic_baseline_equals_24"
             android:textColor="@color/colorTextonPrimary"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:onClick="igualPresionado"/>
     </LinearLayout>
 
 
