@@ -234,7 +234,8 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:src="@drawable/ic_baseline_backspace_24"
             android:textColor="@color/colorTextonPrimary"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:onClick="del"/>
     </LinearLayout>
 
     <LinearLayout
@@ -288,6 +289,17 @@
             android:textColor="@color/colorTextonPrimary"
             android:textSize="30sp"
             android:onClick="operacionPresionada"/>
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="C"
+            android:textColor="@color/colorTextonPrimary"
+            android:textSize="30sp"
+            android:onClick="clear"/>
     </LinearLayout>
 
     <LinearLayout

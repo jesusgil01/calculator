@@ -69,7 +69,6 @@ class MainActivity : AppCompatActivity() {
             "^" -> operacion = POW
             "!" -> operacion = FACT
         }
-        num1 = txtInput.text.toString().toDouble()
         txtInput.setText("0")
     }
 
@@ -86,7 +85,7 @@ class MainActivity : AppCompatActivity() {
                     "ERROR"
             }
             SQRT -> sqrt(num2)
-            LOG -> log(num2, E)
+            LOG -> log(num2, 1.00)
             SIN -> sin(num2)
             COS -> cos(num2)
             TAN -> tan(num2)
@@ -97,6 +96,20 @@ class MainActivity : AppCompatActivity() {
         }
         txtInput.setText("$res")
         print("dummy")
+    }
+
+    fun clear(view: View) {
+        val txtInput = findViewById<TextView>(R.id.txtInput)
+        txtInput.setText("0")
+        num1 = 0.00
+        num2 = 0.00
+        operacion = NINGUNA
+    }
+
+    fun del(view: View){
+        val txtInput = findViewById<TextView>(R.id.txtInput)
+        val tam = txtInput.text.toString().length
+        txtInput.setText(txtInput.text.toString().substring(0, tam-1))
     }
 
     fun factorial(num: Double): Double {
