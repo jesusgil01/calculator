@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
                     "ERROR"
             }
             SQRT -> sqrt(num2)
-            LOG -> log(num2, 1.00)
+            LOG -> log(num2, 10.00)
             SIN -> sin(num2)
             COS -> cos(num2)
             TAN -> tan(num2)
